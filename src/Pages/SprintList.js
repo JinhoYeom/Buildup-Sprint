@@ -25,7 +25,8 @@ function SprintList() {
                                 <span>완료</span>
                             </div>
                         </div>
-                        <span style={{ margin: '10px' }}>2023.02.01~2023.02.15</span>
+                        <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.01~2023.02.15</span>
+
                     </div>
                 </div>
                 <div style={{
@@ -47,11 +48,30 @@ function SprintList() {
                                 <span>완료</span>
                             </div>
                         </div>
-                        <span style={{ margin: '10px' }}>2023.02.15~2023.03.01</span>
+                        <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.15~2023.03.01</span>
+                    </div>
+                </div>
+                <div style={{
+                    width: '200px',
+                    height: '400px',
+                    border: '1px solid black',
+                    margin: '10px 0 10px 0',
+                    justifyContent: 'flex-start',
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    position: 'relative'
+                }}>
+                    <div style={{ width: '100%', height: '100%', border: '1px solid black' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <button id="sprintPlus"> + </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
