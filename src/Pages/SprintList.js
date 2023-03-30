@@ -10,7 +10,7 @@ function SprintList() {
                     width: '200px',
                     height: '400px',
                     border: '1px solid black',
-                    margin: '10px 10px 10px 0',
+                    margin: '10px',
                     justifyContent: 'flex-start',
                     display: 'flex',
                     alignItems: 'flex-start',
@@ -33,7 +33,7 @@ function SprintList() {
                     width: '200px',
                     height: '400px',
                     border: '1px solid black',
-                    margin: '10px 0 10px 0',
+                    margin: '10px',
                     justifyContent: 'flex-start',
                     display: 'flex',
                     alignItems: 'flex-start',
@@ -51,22 +51,25 @@ function SprintList() {
                         <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.15~2023.03.01</span>
                     </div>
                 </div>
-                <div style={{
-                    width: '200px',
-                    height: '400px',
-                    border: '1px solid black',
-                    margin: '10px 0 10px 0',
-                    justifyContent: 'flex-start',
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    position: 'relative'
-                }}>
+                <div
+                    style={{
+                        width: "200px",
+                        height: "400px",
+                        border: "1px solid black",
+                        margin: "10px",
+                        justifyContent: "flex-start",
+                        display: "flex",
+                        alignItems: "center",
+                        position: "relative"
+                    }}>
                     <div style={{ width: '100%', height: '100%', border: '1px solid black' }}>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <button id="sprintPlus"> + </button>
+                                <button id="sprintPlus" style={{
+                                    fontSize: "24px", width: "50px", height: "50px",
+                                    position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"
+                                }}> + </button>
                             </div>
-
                         </div>
                     </div>
                 </div>
