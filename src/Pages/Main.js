@@ -1,10 +1,10 @@
-import SprintList from "./SprintList";
+import SprintOne from "./SprintOne";
 
 function Main() {
 
     return (
         <>
-            <SprintList />
+            <SprintOne />
         </>
     );
 }
