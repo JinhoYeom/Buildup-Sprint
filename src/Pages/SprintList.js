@@ -25,8 +25,13 @@ function SprintList() {
                                 <span>완료</span>
                             </div>
                         </div>
-                        <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.01~2023.02.15</span>
-
+                        <span style={{ margin: '20px 10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.01~2023.02.15</span>
+                        <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
+                            <span>해결할 이슈1</span>
+                        </div>
+                        <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
+                            <span>해결할 이슈2</span>
+                        </div>
                     </div>
                 </div>
                 <div style={{
@@ -49,6 +54,12 @@ function SprintList() {
                             </div>
                         </div>
                         <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.15~2023.03.01</span>
+                        <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
+                            <span>해결할 이슈3</span>
+                        </div>
+                        <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
+                            <span>해결할 이슈4</span>
+                        </div>
                     </div>
                 </div>
                 <div
