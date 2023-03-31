@@ -1,19 +1,19 @@
 import Footer from "../components/commons/Footer";
 import Header from "../components/commons/Header";
-import SideBar from "../components/commons/SideBar";
+import ProjectSideBar from "../components/commons/ProjectSideBar";
 import { Outlet } from "react-router-dom";
 import '../css/sb-admin-2.min.css';
 import '../vendor/fontawesome-free/css/all.min.css';
 
 
 
-function Layout() {
+function ProjectLayout() {
 
     return (
         <>
             <div id="wrapper">
-                <SideBar />
-                <div id="content-wrapper" class="d-flex flex-column">
+                <ProjectSideBar />
+                <div id="content-wrapper" className="d-flex flex-column">
                     <div id="content">
                         <Header />
                         <Outlet />
@@ -25,4 +25,4 @@ function Layout() {
     )
 }
 
-export default Layout;
+export default ProjectLayout;

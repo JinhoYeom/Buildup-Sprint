@@ -1,11 +1,11 @@
 function SprintList() {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h1>스프린트</h1>
-                <button>스프린트 삭제</button>
-                <button>스프린트 완료</button>
+        <>
+            <div className="newproject">
+                <h1>스프린트 목록</h1>
+                <button className="button1">스프린트 시작</button>
             </div>
+            <hr className="line" />
             <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div style={{
                     width: '200px',
@@ -29,9 +29,13 @@ function SprintList() {
                         <span style={{ margin: '20px 10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.01~2023.02.15</span>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈1</span>
+                            <br />
+                            <span style={{ fontSize: '9px' }}>담당자 : 허희만</span>
                         </div>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈2</span>
+                            <br />
+                            <span style={{ fontSize: '9px' }}>담당자 : 남효정</span>
                         </div>
                     </div>
                 </div>
@@ -57,9 +61,13 @@ function SprintList() {
                         <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.15~2023.03.01</span>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈3</span>
+                            <br />
+                            <span style={{ fontSize: '9px' }}>담당자 : 이준성</span>
                         </div>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈4</span>
+                            <br />
+                            <span style={{ fontSize: '9px' }}>담당자 : 허희만</span>
                         </div>
                     </div>
                 </div>
@@ -86,7 +94,7 @@ function SprintList() {
                     </div>
                 </div>
             </div>
-        </div >
+        </>
     );
 }
 
