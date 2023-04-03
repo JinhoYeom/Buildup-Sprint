@@ -23,7 +23,11 @@ function SprintOne() {
                             <div style={{ border: '1px solid black', padding: '5px' }}>
                                 <span>스프린트1</span>
                             </div>
+                            <div style={{ border: '1px solid black', padding: '5px' }}>
+                                <span>완료</span>
+                            </div>
                         </div>
+                        <span style={{ margin: '20px 10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.01~2023.02.15</span>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈1</span>
                             <br />
@@ -49,9 +53,13 @@ function SprintOne() {
                     <div style={{ width: '100%', height: '100%', border: '1px solid black' }}>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px' }}>
                             <div style={{ border: '1px solid black', padding: '5px' }}>
-                                <span>할 일</span>
+                                <span>스프린트2</span>
+                            </div>
+                            <div style={{ border: '1px solid black', padding: '5px' }}>
+                                <span>완료</span>
                             </div>
                         </div>
+                        <span style={{ margin: '10px', borderBottom: '8px solid blue', paddingBottom: '1px' }}>2023.02.15~2023.03.01</span>
                         <div style={{ margin: '10px', padding: '10px', border: '1px solid black' }}>
                             <span>해결할 이슈3</span>
                             <br />
