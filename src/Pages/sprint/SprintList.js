@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
+import SprintCreate from "./SprintCreate";
 
 function SprintList() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const handleOpenModal = () => {
+    const openSprintCreateModal = () => {
         setModalIsOpen(true);
     };
 
@@ -12,11 +12,13 @@ function SprintList() {
         setModalIsOpen(false);
     };
 
+
     return (
         <>
             <div className="newproject">
                 <h1>스프린트 목록</h1>
-                <button className="button1" onClick={handleOpenModal}>스프린트 시작</button>
+                <button id="sprintcreatebtn" onClick={openSprintCreateModal}>스프린트 생성</button>
+                <SprintCreate modalIsOpen={modalIsOpen} handleCloseModal={handleCloseModal} />
             </div>
             <hr className="line" />
             <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -107,57 +109,6 @@ function SprintList() {
                     </div>
                 </div>
             </div>
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={handleCloseModal}
-                contentLabel="SprintCreate Modal"
-                style={{
-                    content: {
-                        width: "50%",
-                        height: "700px",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)"
-                    }
-                }}
-            >
-                <div className="modal-header">
-                    <h5 className="modal-title" style={{ color: "blue" }}>
-                        스프린트
-                    </h5>
-                    <button
-                        type="button"
-                        className="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                        onClick={handleCloseModal}
-                    >
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div style={{ margin: "20px 0", position: "relative" }}>
-                    <div style={{ marginBottom: "40px" }}>
-                        <h2>스프린트 생성</h2>
-                    </div>
-                    <label style={{ marginRight: "10px" }}>스프린트 이름 : </label>
-                    <input type="text" />
-                    <br />
-                    <label style={{ marginRight: "10px" }}>기간 설정 : </label>
-                    <input type="text" />
-                    <br />
-                    <label style={{ marginRight: "10px" }}>시작 날짜 : </label>
-                    <input type="text" />
-                    <br />
-                    <label style={{ marginRight: "10px" }}>종료 날짜 : </label>
-                    <input type="text" />
-                    <br />
-                    <label style={{ marginRight: "10px" }}>스프린트 내용 : </label>
-                    <input type="text" />
-                    <br />
-
-                    <button style={{ position: "absolute", bottom: "20px", right: "20px" }} onClick={handleCloseModal}> 취소 </button>
-                </div>
-            </Modal>
         </>
     );
 }
